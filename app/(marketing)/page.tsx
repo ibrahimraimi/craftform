@@ -38,7 +38,7 @@ export default function Component() {
             </Link>
           </Button>
           <Button className="text-sm" variant="default">
-            Sign up
+            <Link href="/signup">Sign up</Link>
           </Button>
         </div>
       </header>

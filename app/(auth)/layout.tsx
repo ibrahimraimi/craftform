@@ -32,13 +32,6 @@ export default function AuthLayout({ children }: React.PropsWithChildren) {
             >
               Jen P
             </a>
-            {" on "}
-            <a
-              href="https://unsplash.com/photos/a-close-up-of-an-egg-on-a-cloth-7369EQS2iiU"
-              className="hover:underline"
-            >
-              Unsplash
-            </a>
           </div>
         </div>
       </AspectRatio>
