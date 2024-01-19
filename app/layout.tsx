@@ -5,6 +5,7 @@ import { siteConfig } from "@/configs/site";
 import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
 import { Inter as FontSans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           {children}
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
