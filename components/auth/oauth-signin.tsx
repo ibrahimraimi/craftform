@@ -7,8 +7,6 @@ import { Button } from "../ui/button";
 import { type OAuthStrategy } from "@clerk/types";
 import { isClerkAPIResponseError, useSignIn } from "@clerk/nextjs";
 
-//TODO - Add Microsoft OAuth In the future { name: "Microsoft", strategy: "oauth_microsoft", icon: "microsoft" },
-
 const oauthProviders = [
   { name: "Google", strategy: "oauth_google", icon: "google" },
   { name: "Facebook", strategy: "oauth_facebook", icon: "facebook" },

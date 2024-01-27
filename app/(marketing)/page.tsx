@@ -52,7 +52,7 @@ export default function Component() {
           welcome a dynamic approach to glean valuable insights.
         </p>
         <Button className="mt-8" variant="default">
-          Get started — it&apos;s free
+          <Link href="/builder">Get started — it&apos;s free</Link>
         </Button>
         <p></p>
       </main>
