@@ -3,18 +3,12 @@ import { NextResponse } from "next/server";
 
 export default authMiddleware({
   publicRoutes: ["/", "/signin", "/signup", "/terms", "/privacy", ""],
-  afterAuth(auth, req, evt) {
+  afterAuth(auth, req) {
     //? Handle users who aren't authenticated
     if (!auth.userId && !auth.isPublicRoute) {
       return redirectToSignIn({
         returnBackUrl: req.url,
       });
-    }
-
-    //? Redirect authenticated users to the form dashboard page
-    if (auth.userId && !auth.orgId && req.nextUrl.pathname !== "builder") {
-      const orgSelection = new URL("/builder", req.url);
-      return NextResponse.redirect(orgSelection);
     }
 
     //? Allow authenticated users to access protected routes
