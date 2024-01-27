@@ -52,9 +52,9 @@ export default function Component() {
           welcome a dynamic approach to glean valuable insights.
         </p>
         <Button className="mt-8" variant="default">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Get started — it's free
+          Get started — it&apos;s free
         </Button>
+        <p></p>
       </main>
     </div>
   );
