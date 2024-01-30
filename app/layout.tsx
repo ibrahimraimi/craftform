@@ -1,11 +1,12 @@
-import "@/styles/globals.css";
-import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/providers";
 import { siteConfig } from "@/configs/site";
+import { cn } from "@/lib/utils";
+import "@/styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import localFont from "next/font/local";
-import { Inter as FontSans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { Inter as FontSans } from "next/font/google";
+import localFont from "next/font/local";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -89,7 +90,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontHeaiing.variable
           )}
         >
-          {children}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+
           <SpeedInsights />
         </body>
       </html>

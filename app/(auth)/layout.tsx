@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/configs/site";
-import { Icons } from "@/components/icons";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function AuthLayout({ children }: React.PropsWithChildren) {
