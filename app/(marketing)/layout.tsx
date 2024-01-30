@@ -1,7 +1,7 @@
 import { currentUser } from "@clerk/nextjs";
 
-import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 
 interface MarketingLayoutProps
   extends React.PropsWithChildren<{
@@ -18,7 +18,8 @@ export default async function MarketingLayout({
     <div className="relative flex min-h-screen flex-col">
       <SiteHeader user={user} />
       <main className="flex-1">
-        {children} {modal}
+        {children}
+        {modal}
       </main>
       <SiteFooter />
     </div>
