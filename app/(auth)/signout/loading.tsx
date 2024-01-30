@@ -10,8 +10,8 @@ export default function SignOutLoading() {
   return (
     <Shell className="max-w-md">
       <PageHeader className="text-center">
-        <PageHeaderHeading size="sm">Sign out</PageHeaderHeading>
-        <PageHeaderDescription size="sm">
+        <PageHeaderHeading>Sign out</PageHeaderHeading>
+        <PageHeaderDescription>
           Are you sure you want to sign out?
         </PageHeaderDescription>
       </PageHeader>
