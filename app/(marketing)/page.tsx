@@ -10,14 +10,17 @@ import {
 } from "@/components/page-header";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Announcement } from "@/components/announcement";
 
 export default function IndexPage() {
   return (
     <div className="container relative">
       <PageHeader>
-        {/* <Announcement /> */}
+        <Announcement />
         <PageHeaderHeading>
-          Crafting a refreshingly different form building experience!
+          <span className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text dark:text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+            Crafting a refreshingly different form building experience!
+          </span>
         </PageHeaderHeading>
         <PageHeaderDescription>
           Transform your data collection with Craftform – the innovative form
