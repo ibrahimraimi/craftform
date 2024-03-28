@@ -1,5 +1,6 @@
 // @ts-nocheck
 import Link from "next/link";
+import Image from "next/image";
 
 import { JoinNewsletterForm } from "@/components/form/join-newsletter-form";
 import { Icons } from "@/components/icons";
@@ -21,7 +22,13 @@ export function SiteFooter() {
             aria-labelledby="footer-branding-heading"
           >
             <Link href="/" className="flex w-fit items-center space-x-2">
-              <Icons.logo className="h-6 w-6" aria-hidden="true" />
+              <Image
+                src="/icon.svg"
+                width={50}
+                height={50}
+                alt="logo"
+                className="h-6 w-6"
+              />
               <span className="font-bold">{siteConfig.name}</span>
               <span className="sr-only">Home</span>
             </Link>

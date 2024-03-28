@@ -9,7 +9,7 @@ export default function AuthLayout({ children }: React.PropsWithChildren) {
     <div className="grid min-h-screen grid-cols-1 overflow-hidden md:grid-cols-3 lg:grid-cols-2">
       <AspectRatio ratio={16 / 9}>
         <Image
-          src="/images/auth-layout.avif"
+          src="/images/auth-layout.png"
           alt="A close up of an egg on a cloth"
           fill
           className="absolute inset-0 object-cover"
